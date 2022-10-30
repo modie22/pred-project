@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="subscribe-section">
+        <div class="container sub-container">
+          <picture>
+            <source
+              srcset="
+                ./images/banan-des-1x.jpg 1x,
+                ./images/banan-des-2x.jpg 2x
+              "
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="
+                ./images/banan-tab-1x.jpg 1x,
+                ./images/banan-tab-2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./images/banan-mob-1x.jpg 1x,
+                ./images/banan-mob-2x.jpg 2x
+              "
+              media="(max-width:767px)"
+            />
+            <img
+              src="./images/banan-des-1x.jpg"
+              alt="Банан"
+              class="sub-image"
+            />
+          </picture>
+          <form class="sub-form">
+            <h2 class="sub-form__title">Subscribe To Get Special Offers</h2>
+            <p class="sub-form__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+
+            <label class="sub-form__label">
+              <input
+                type="email"
+                name="email"
+                class="sub-form__input"
+                placeholder="Enter your email"
+                required
+              />
+            </label>
+
+            <button type="submit" class="sub-form__btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
